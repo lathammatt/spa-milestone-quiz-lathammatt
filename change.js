@@ -18,10 +18,11 @@ var CarLot = (function (oldCarLot){
 			this.classList.toggle("thick");
 			this.classList.toggle("picked");
 			var changes = this.querySelector("div.desc");
+			var original = changes.innerText
 			text.focus();
 			text.value = "";
 			text.addEventListener("keyup", function(){
-				changes.innerHTML += `${text.value}`;
+				changes.innerHTML = `${original + text.value}`;
 			});
 
 		});
