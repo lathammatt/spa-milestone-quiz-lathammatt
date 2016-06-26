@@ -5,7 +5,7 @@ var CarLot = (function (oldCarLot){
 	oldCarLot.populatePage = function (inventory) {
 	for (var i = 0; i < inventory.cars.length; i++) {
 		var first = inventory.cars[i];
-		var carMain = document.createElement('div');
+		var carMain = document.createElement('car');
 		carMain.className = "col-md-4"
 		carMain.classList.add(`${first.color}`);
 		document.getElementById("output").appendChild(carMain);

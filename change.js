@@ -12,17 +12,16 @@ var CarLot = (function (oldCarLot){
 	for (var i = 0; i < selected.length; i++) {
 		selected[i].addEventListener("click", function(event){
 			console.log("click", event);
+			if (this){
 			this.classList.toggle("thick");
-			this.classList.toggle("picked");
-			if (selected[i] !== this){
-				selected[i].classList.remove("thick");
-				selected[i].classList.remove("picked");
+			this.classList.toggle("picked");}
+			else {
 			};
-			var changes = selected[i].getElementsByClassName("desc");
+			var changes = this.getElementsByClassName("desc");
 			text.focus();
 			text.value = "";
 			text.addEventListener("keyup", function(){
-				changes.innerHTML += `${input.value}`;
+				changes.innerHTML += `${text.value}`;
 			});
 
 		});
@@ -32,6 +31,8 @@ var CarLot = (function (oldCarLot){
 		console.log("button", event);
 		for (var i = 0; i < selected.length; i++) {
 			selected[i].classList.remove("thick");
+			selected[i].classList.remove("picked");
+
 		};
 		text.value = "";
 
