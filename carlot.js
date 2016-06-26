@@ -11,10 +11,9 @@ var CarLot = (function () {
       carlist.send();
       carlist.addEventListener("load", function () {
         inventory = JSON.parse(carlist.responseText);
-        console.log("json", inventory);
         callback(inventory);
 
-      });
+        });
     }
   };
 

@@ -1,4 +1,3 @@
-/*callback function to load to DOM*/
 
 var CarLot = (function (oldCarLot){
 
@@ -39,18 +38,11 @@ var CarLot = (function (oldCarLot){
 
 	return inventory;
 
-  // Now that the DOM is loaded, establish all the event listeners needed
-  // CarLot.activateEvents();
-
-
 };
 	return oldCarLot;
 
 })(CarLot);
 
-// Load the inventory and send a callback function to be
-// invoked after the process is complete
 CarLot.loadInventory(CarLot.populatePage);
-console.log("2nd", CarLot);
 
 
