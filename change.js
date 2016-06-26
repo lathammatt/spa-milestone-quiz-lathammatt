@@ -6,18 +6,18 @@ var CarLot = (function (oldCarLot){
 		
 	var text = document.getElementById("input");
 	var submit = document.getElementById("submit");
-	var selected = document.getElementsByClassName("col-md-4");
+	var selected = document.getElementsByClassName("col-md-3");
 
 	console.log("listen", selected);
 	for (var i = 0; i < selected.length; i++) {
+		// selected[i].style.borderWidth = "2px";
+		// selected[i].style.backgroundColor = "";
 		selected[i].addEventListener("click", function(event){
 			console.log("click", event);
-			if (this){
+
 			this.classList.toggle("thick");
-			this.classList.toggle("picked");}
-			else {
-			};
-			var changes = this.getElementsByClassName("desc");
+			this.classList.toggle("picked");
+			var changes = this.querySelector("div.desc");
 			text.focus();
 			text.value = "";
 			text.addEventListener("keyup", function(){

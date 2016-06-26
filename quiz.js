@@ -6,8 +6,9 @@ var CarLot = (function (oldCarLot){
 	for (var i = 0; i < inventory.cars.length; i++) {
 		var first = inventory.cars[i];
 		var carMain = document.createElement('car');
-		carMain.className = "col-md-4"
+		carMain.className = "col-md-3"
 		carMain.classList.add(`${first.color}`);
+		// carMain.style.overflowX = "scroll"
 		document.getElementById("output").appendChild(carMain);
 
 		var make = document.createElement('div');

@@ -1,5 +1,14 @@
 
+car {
+	display:block;
+	margin: 10px 10px 10px 25px;
+	overflow-x: scroll;
+	word-wrap: break-word;
+}
 
+.row {
+	margin-bottom: 15px;
+}
 
 .FireBrick {
 	border: 2px solid firebrick;
@@ -19,4 +28,7 @@
 
 .picked {
 	background-color: lightgray;
+}
+
+.desc {
 }
