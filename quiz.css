@@ -1,0 +1,22 @@
+.thick {
+	border:5px;
+}
+
+.picked {
+	background-color: lightgray;
+}
+
+
+
+.FireBrick {
+	border: 2px solid firebrick;
+}
+.Aqua {
+	border: 2px solid aqua;
+}
+.Blue {
+	border: 2px solid blue;
+}
+.Yellow {
+	border: 2px solid yellow;
+}

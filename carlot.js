@@ -20,4 +20,3 @@ var CarLot = (function () {
 
 })();
 
-console.log("test");

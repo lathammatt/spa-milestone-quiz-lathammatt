@@ -3,11 +3,9 @@
 var CarLot = (function (oldCarLot){
 
 	oldCarLot.populatePage = function (inventory) {
-	console.log("check", inventory);
 	for (var i = 0; i < inventory.cars.length; i++) {
 		var first = inventory.cars[i];
 		var carMain = document.createElement('div');
-		console.log("callback", first);
 		carMain.className = "col-md-4"
 		carMain.classList.add(`${first.color}`);
 		document.getElementById("output").appendChild(carMain);
@@ -26,13 +24,14 @@ var CarLot = (function (oldCarLot){
 		
 		var price = document.createElement('div');
 		carMain.appendChild(price);
-		price.appendChild(document.createTextNode("Price: " + first.price));
+		price.appendChild(document.createTextNode("Price: $" + first.price));
 		
 		var color = document.createElement('div');
 		carMain.appendChild(color);
 		color.appendChild(document.createTextNode("Color: " + first.color));
 		
 		var description = document.createElement('div');
+		description.className = "desc"
 		carMain.appendChild(description);
 		description.appendChild(document.createTextNode("Description: " + first.description));
 	}
@@ -41,7 +40,9 @@ var CarLot = (function (oldCarLot){
 
   // Now that the DOM is loaded, establish all the event listeners needed
   // CarLot.activateEvents();
-}
+
+
+};
 	return oldCarLot;
 
 })(CarLot);
