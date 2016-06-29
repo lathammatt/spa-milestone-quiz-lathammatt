@@ -47,7 +47,6 @@ var CarLot = (function (oldCarLot){
 	}
 
 	CarLot.activateEvents();
-	// return inventory;
 
 };
 	return oldCarLot;
