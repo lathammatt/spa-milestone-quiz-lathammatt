@@ -17,8 +17,8 @@ var CarLot = (function (oldCarLot){
 
 	oldCarLot.selectIon = function (event){
 		var current = event.currentTarget;
-		current.classList.toggle("thick");
-		current.classList.toggle("picked");
+		current.classList.add("thick");
+		current.classList.add("picked");
 		changes = current.lastChild;
 		original = changes.innerText;
 		text.focus();
