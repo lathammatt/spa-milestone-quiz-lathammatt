@@ -15,7 +15,7 @@
       "year": "2008",
       "price": "9999",
       "color": "Aqua",
-      "purchased": false,
+      "purchased": true,
       "description": "This is an decent 2008 Honda Accord with only 91000 miles on it. Only been in one accident. Some hail damage."
     },
     {

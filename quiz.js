@@ -30,10 +30,20 @@ var CarLot = (function (oldCarLot){
 		carMain.appendChild(color);
 		color.appendChild(document.createTextNode("Color: " + first.color));
 		
+		var sold = document.createElement('div');
+		carMain.appendChild(sold);
+		if (first.purchased === true){
+			sold.className = "sold"
+			sold.appendChild(document.createTextNode("This vehicle is sold"));}
+		else {
+			sold.className = "open"
+			sold.appendChild(document.createTextNode("This vehicle is available for sale"));}
+
 		var description = document.createElement('div');
 		description.className = "desc"
 		carMain.appendChild(description);
 		description.appendChild(document.createTextNode("Description: " + first.description));
+
 	}
 
 	return inventory;

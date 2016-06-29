@@ -31,5 +31,10 @@ car {
 	background-color: lightgray;
 }
 
-.desc {
+.sold {
+	color: red;
+}
+
+.open {
+	color: green;
 }
