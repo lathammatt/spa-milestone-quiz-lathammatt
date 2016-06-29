@@ -46,7 +46,8 @@ var CarLot = (function (oldCarLot){
 
 	}
 
-	return inventory;
+	CarLot.activateEvents();
+	// return inventory;
 
 };
 	return oldCarLot;
@@ -54,5 +55,4 @@ var CarLot = (function (oldCarLot){
 })(CarLot);
 
 CarLot.loadInventory(CarLot.populatePage);
-
 
