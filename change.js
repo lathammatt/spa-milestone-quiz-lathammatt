@@ -20,6 +20,7 @@ var CarLot = (function (oldCarLot){
 		CarLot.clearButton(event),
 		CarLot.addText(event),
 		text.value = "";
+
 		});
 	};
 

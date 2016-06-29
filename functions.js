@@ -32,6 +32,8 @@ var CarLot = (function (oldCarLot){
 	};
 
 	oldCarLot.clearButton = function(){
+		changes = null;
+		original = null;
 		for (var i = 0; i < selected.length; i++) {
 			selected[i].classList.remove("thick");
 			selected[i].classList.remove("picked");
