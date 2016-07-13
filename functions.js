@@ -27,7 +27,7 @@ var CarLot = (function (oldCarLot){
 
 	oldCarLot.addText = function(event){
 		if (changes && original) {
-			changes.innerHTML = `${original + text.value}`;	
+			changes.innerHTML = `${text.value}`;	
 		}
 	};
 

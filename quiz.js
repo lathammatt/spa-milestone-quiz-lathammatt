@@ -42,7 +42,7 @@ var CarLot = (function (oldCarLot){
 		var description = document.createElement('div');
 		description.className = "desc"
 		carMain.appendChild(description);
-		description.appendChild(document.createTextNode("Description: " + first.description));
+		description.appendChild(document.createTextNode(first.description));
 
 	}
 
