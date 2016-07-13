@@ -1,0 +1,40 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": "2008",
+      "price": "9999",
+      "color": "Aqua",
+      "purchased": true,
+      "description": "This is an decent 2008 Honda Accord with only 91000 miles on it. Only been in one accident. Some hail damage."
+    },
+    {
+      "make": "Honda",
+      "model": "Fit",
+      "year": "2012",
+      "price": "10999",
+      "color": "Blue",
+      "purchased": false,
+      "description": "This is an horribly trashed Honda Fit with only 56000 miles on it. Cloth seats. Smells like cats."
+    },
+    {
+      "make": "Dodge",
+      "model": "Charger",
+      "year": "2015",
+      "price": "63999",
+      "color": "Yellow",
+      "purchased": false,
+      "description": "This is an pristine 2015 Dodge Charger with only 6000 miles on it. All the premium packages included."
+    }
+  ]
+}

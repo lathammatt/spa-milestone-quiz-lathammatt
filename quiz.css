@@ -1,0 +1,44 @@
+
+car {
+	display:block;
+	margin: 10px 10px 10px 25px;
+	overflow-x: scroll;
+	word-wrap: break-word;
+	height: 270px;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.FireBrick {
+	border: 2px solid firebrick;
+}
+.Aqua {
+	border: 2px solid aqua;
+}
+.Blue {
+	border: 2px solid blue;
+}
+.Yellow {
+	border: 2px solid yellow;
+}
+.thick {
+	border-width: 5px
+}
+
+.picked {
+	background-color: lightgray;
+}
+
+.sold {
+	color: red;
+}
+
+.open {
+	color: green;
+}
+
+.desc {
+	
+}
